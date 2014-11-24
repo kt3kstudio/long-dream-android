@@ -3,3 +3,9 @@
 
 # gradle build
 /build
+
+# android assets
+/src/main/assets
+
+# bower
+/bower_components

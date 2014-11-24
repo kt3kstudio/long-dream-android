@@ -5,7 +5,7 @@ CORE_DIR=$(APP_NAME)-core
 
 .PHONY: assets build clean debug-install device-launch-app device-logcat
 
-device-debug: build debug-install device-launch-app device-logcat
+device-debug: assets build debug-install device-launch-app device-logcat
 	@echo
 
 assets:
