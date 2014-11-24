@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.14.4'
+    }
+}
+
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.kt3k.straw:straw-android:0.7.0', {
+        exclude group: 'com.google.android'
+    }   
+
+    compile 'org.kt3k.straw:straw-android-plugin:0.7.2', {
+        exclude group: 'com.google.android'
+    } 
+}
