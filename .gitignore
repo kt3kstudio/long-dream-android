@@ -9,3 +9,10 @@
 
 # bower
 /bower_components
+
+# local properties
+/local.properties
+
+# idea files
+/.idea
+*.iml
