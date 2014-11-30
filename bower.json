@@ -12,5 +12,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "long-dream-core": "https://github.com/kt3kstudio/long-dream-core.git#~0.0.5"
+  }
 }

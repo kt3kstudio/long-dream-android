@@ -9,7 +9,7 @@ device-debug: assets build debug-install device-launch-app device-logcat
 	@echo
 
 assets:
-	cd bower_components/$(CORE_DIR) ; bundle install ; bundle exec middleman build
+	cd bower_components/$(CORE_DIR) ; bundle install ; BASE_DIR=../.. BUILD_DIR=src/main/assets bundle exec middleman build --verbose
 
 build:
 	./gradlew build
